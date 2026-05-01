@@ -4,6 +4,8 @@ metadata:
   name: ui-app
   labels:
     app: ui-app
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
 spec:
   replicas: 2
   selector:
